@@ -1,0 +1,56 @@
+{{>header}}
+<title>Update Parking</title>
+{{>navbar}}
+<div class="container">
+    <h5 class="bg-secondary text-light text-center mt-2 p-2">Update Employee</h5>
+    <form class="mytable" action="/update/{{data._id}}" method="post">
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">registration_number</label>
+            <input type="text" class="form-control" name="registration_number" placeholder="Enter registration_number Here" />
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">vehicle</label>
+            <input type="text" class="form-control" name="vehicle" placeholder="Enter vehicle type" />
+        </div>
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Arrival date</label>
+            <input type="Date" class="form-control" name="Arrival date" placeholder="YYYY-MM-DD" />
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3  col-md-6 col-12">
+            <label class="form-label">Arrival time</label>
+            <input type="time" class="form-control" name="Arrival time" placeholder="Enter Arrival time"/>
+            
+        </div>
+        
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Departure date</label>
+            <input type="Date" class="form-control" name="phone" placeholder="Enter Departure date" />
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">Departure time</label>
+            <input type="time" class="form-control" name="Departure time" placeholder="Enter Departure time" />
+        </div>
+        <div class="mb-3 col-md-6 col-12">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" name="city" placeholder="Enter City Name" />
+        </div>
+        </div>
+        <button type="submit" class="btn btn-success w-100" onclick="showConfirmation()">Submit</button>
+    </form>
+
+
+</div>
+{{>footer}}
+<script>
+    function showConfirmation() {
+    // Display a confirmation alert
+        var confirmMessage = "Are you sure to Update Vehicle Details!";
+        alert(confirmMessage);
+}

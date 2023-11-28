@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(90deg, #0e5935, #0e594b 30%, #03f598, #03f560 100%);
+    }
+
+    .aboutus {
+      position: relative;
+      width: 100%;
+      padding: 40px 100px;
+    }
+
+    .aboutus .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+
+    .aboutus .title h2 {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .home3 {
+      display: flex;
+      margin-top: 1px;
+    }
+
+    .home3 .contain {
+      padding-left: 5rem;
+      padding-top: 5rem;
+      width: 40rem;
+    }
+
+    .home3 .home3-img {
+      margin: 5rem;
+      padding-top: 5px;
+    }
+
+    .contain .heda {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #198754;
+    }
+
+    .desc {
+      letter-spacing: 2px;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  {{>header}}
+<title>Update Parking</title>
+{{>navbar}}
+
+  <div class="aboutus" action="/about">
+    <div class="title">
+      <h2>
+        About Us
+      </h2>
+    </div>
+  </div>
+
+  <section class="home3">
+    <div class="contain">
+      <p class="heda">Our Mission</p>
+      <p class="desc">To be the best Parking Solutions provider in the world, and to shape the future of Parking Services by providing unprecedented value and opportunity to our customers, investors, and partners.</p>
+      <p class="heda">Our Vision</p>
+      <p class="desc">CuroPark is paving the way for a better car parking experience by combining our boundless enthusiasm for technology, content, and services to create ground-breaking Parking Solutions.</p>
+      <p class="heda">Our Goals</p>
+      <p class="desc">The goal of implementing a Parking Management System is to save time and improve the current Parking Management System's efficiency. Parking strategies for vehicle management must be well implemented in densely populated cosmopolitan areas.</p>
+    </div>
+
+    <div class="home3-img">
+      <img src="https://www.pexels.com/photo/classy-retro-car-parked-on-street-in-daytime-6039204/" alt="...">
+    </div>
+  </section>
+</body>
+</html>

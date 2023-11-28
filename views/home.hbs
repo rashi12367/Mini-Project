@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    .home{
+      height: 45rem;
+      background: url("parking.jpg")repeat;
+      background-size: cover;
+    }
+
+    .cont{
+      padding-left: 7rem;
+      padding-top: 6rem;
+    }
+
+    .home .men{
+      color: white;
+      font-size: 4rem;
+      font-weight:lighter;
+    }
+
+    .home .cont .nomen{
+      color: white;
+      font-size: 1.2rem;
+      margin-top: 2.6rem;
+    }
+
+    .people{
+      background: linear-gradient(90deg,#0e5935,#0e594b 30%,#03f598,#03f560 100%);
+    }
+
+    .people .heading{
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .people .heading p{
+      margin-top: 1rem;
+    }
+
+    .people .heading .p1{
+      font-size: 2rem;
+    }
+
+    .people .heading .p2{
+      font-size: 1.2rem;
+    }
+
+    .people .ceo-cards{
+      display: flex;
+      margin: 3rem;
+    }
+
+    .people .ceo-cards .crds{
+      margin: 2rem;
+      border: none;
+    }
+
+    .crds{
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .people .ceo-cards .crds img{
+      width: 100%;
+      height: 50%;
+    }
+
+    .people .ceo-cards .crds .Founder{
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .people .ceo-cards .crds .desig{
+      opacity: 0.6;
+      margin-top: 1.2rem;
+    }
+
+    .people .ceo-cards .crds .words{
+      margin-top: 1.3rem;
+    }
+
+    .people .ceo-cards .crds button{
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 1rem;
+      margin-top: 1.2rem;
+      background-color: rgb(223, 220, 220);
+      border: none;
+    }
+
+    .people .ceo-cards .crds button:hover{
+      cursor: pointer;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+{{>header}}
+<title>Home</title>
+{{>navbar}}
+  <section class="home" action="/home">
+    <div class="cont">
+    <p class="men">Looking For a Car</p>
+    <p class="nomen">Stop wasting valuable time visit our site.</p>
+    </div>
+  </section>
+  <div class="people">
+    <div class="heading">
+        <p class="p1">The Team</p>
+        <p class="p2">The Ones Who runs this Company</p>
+
+    </div>
+    <div class="ceo-cards">
+      {{#each team}}
+    <div class="crds">
+      <img src="rashi.jpg" alt="...">
+      <p class="Founder">Rashi Agrawal</p>
+    </div>
+    <div class="crds">
+      <img src="rashi.jpg" alt="...">
+      <p class="Founder">Govind Sharma</p>
+    </div>
+    <div class="crds">
+      <img src="rashi.jpg" alt="...">
+      <p class="Founder">Diksha Trivedi</p>
+    </div>
+    <div class="crds">
+      <img src="rashi.jpg" alt="...">
+      <p class="Founder">Riya Saxena</p>
+    </div>
+  {{/each}}
+</div>
+
+

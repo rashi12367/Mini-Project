@@ -1,0 +1,39 @@
+{{>header}}
+    <title>Park4U - Data</title>
+    {{>navbar}}
+    <div class="container" action="/table">
+        <h5 class="bg-secondary text-light text-center mt-2 p-2">Park4u<a href="/add"><span class="material-symbols-outlined">add</span></a></h5>
+        <div class="table-response">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>registration_num</th>
+                    <th>vehicle</th>
+                    <th>arrival_date</th>
+                    <th>arrival_time</th>
+                    <th>departure_date</th>
+                    <th>departure_time</th>
+                    <th>City</th>
+                    <th>slotNumber</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                {{#each data}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{registration_num}}</td>
+                    <td>{{vehicle}}</td>
+                    <td>{{arrival_date}}</td>
+                    <td>{{arrival_time}}</td>
+                    <td>{{departure_date}}</td>
+                    <td>{{departure_time}}</td>
+                    <td>{{city}}</td>
+                    <td>{{slotNumber}}</td>
+                    <td><a href="/update/{{_id}}"><span class="material-symbols-outlined">edit</span></a></td>
+                    <td><a href="/delete/{{_id}}"><span class="material-symbols-outlined">delete_forever</span></a></td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+    {{>footer}}
